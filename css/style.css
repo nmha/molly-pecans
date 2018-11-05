@@ -1,0 +1,243 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  
+} 
+
+html, body,header{
+  height: 100%;
+}
+
+header{
+  background:url('../img/splash.jpg')center/cover;
+}
+.header-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 360px;
+}
+
+.header-box a{
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  color: #fff;
+  margin-top: 50px;
+  text-decoration: none;
+  transition: all ease-in-out
+}
+
+header::after{
+  content: '';
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0 ,0.25);
+}
+.header-box a:hover{
+  background-color: rgba (0,0,0,0.25);
+  transform: perspective()
+
+}
+
+
+/* LIGNE DE MENU  -navigation*/
+
+nav{
+  padding: 25px 0;
+  text-align: center;
+  border-bottom: 2px solid #303030;
+
+}
+
+nav a{
+  display: inline-block;
+  vertical-align: center;
+  font-family: serif;
+  font-size: 15px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #303030;
+  margin: 0 15px;
+  padding-bottom: 3px;
+}
+
+/* sélectionne tous les a sauf celui ou ya le logo */
+nav a:not(.nav-logo):hover{
+  border-bottom: 1px dotted #303030;
+}
+
+.nav-logo{
+ border-bottom:none;
+}
+
+/* MAIN  */
+
+main{
+ width: 940px;
+ margin: 0 auto;
+ 
+  font-family: serif;
+  font-size: 15px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+section{
+  padding: 50px;
+}
+.products{
+text-align: center;
+}
+
+.product{
+  display: inline-block;
+  width: 300px;
+}
+.product a{
+  width: 100%;
+  display: inline-block;
+
+}
+.product img{
+max-width: 100%;
+}
+.product+.product{
+  margin-left: 20px;
+}
+
+
+
+/* poour positionner la ligne  */
+.shop-all{
+  text-align: left;
+height: 63px;
+line-height: 63px;
+background: url(../img/Capture.PNG);
+
+}
+h2{
+  font-family: serif;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 span {
+  font-family: serif;
+  text-transform: none;
+  font-style: italic;
+  display: block;
+  margin-top: 30px;
+
+}
+
+.our-story{
+  padding: 0 150px;
+  font-size: 21px;
+  line-height: 30px;
+}
+ /* pas besoin de mettre w car balise block et widh est inscrit dans main */
+.slider{
+  height: 565px;
+  background: url('../img/image-04.jpg');
+  position: relative;
+  text-align: center;
+}
+
+.slider-box{
+  width: 330px;
+  height: 180px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.slider-box::after{
+  content:"";
+  width: 330px;
+  height: 180px;
+  border: 2px solid #303030;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+footer{
+  width: 940px;
+  margin: 0 auto; 
+  
+}
+
+.footer-contact{
+  background: url(../img/bar-footer.jpg);
+  height: 152px;
+}
+
+.footer-contact > div {
+  float: right;
+  width: calc(100%/3);
+
+}
+.footer-contact::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.connect a{
+  background-image: url(../img/icons-social.jpg);
+  height: 22px;
+  display: inline-block;
+  margin: 0 5px;
+
+}
+
+.facebook{
+  width: 12px;
+}
+
+.instagram{
+  width: 21px;
+  background-position-x:-12px;
+}
+
+.footer-infos{
+  text-align: center;
+  display:inline-block;
+
+}
+.footer-infos>nav a {
+  font-size: 12px;
+ 
+
+}
+
+.last{
+ 
+  float: right;
+  margin: 30px 10px;
+  line-height: 91px;
+ 
+ 
+} 
+
+
+/* il y a eu plusieurs changements dans la correction, notamment sur les parties "main" déjà corrigées une première fois. C'est assez dur à suivre. j'attendrais la correction finale */
+
+/* il y a eu des changements aussi dans l'HTML, c'est très dur à suivre  */
